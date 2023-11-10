@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Change on Mouseover</title>
+</head>
+<body>
+    <h1>Task 04</h1>
+
+    <a href="index.html"> <h1>Go back to home page</h1></a>
+    
+
+  <img id="myImage" src="https://via.placeholder.com/300" alt="Original Image" onmouseover="changeImage()" onmouseout="restoreImage()">
+
+  <script>
+    function changeImage() {
+      // Change the image source on mouseover
+      document.getElementById('myImage').src = 'https://via.placeholder.com/300/ff0000';
+    }
+
+    function restoreImage() {
+      // Restore the original image on mouseout
+      document.getElementById('myImage').src = 'https://via.placeholder.com/300';
+    }
+  </script>
+
+</body>
+</html>

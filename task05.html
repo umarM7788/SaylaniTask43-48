@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+</head>
+<body>
+    <h1>Task 05</h1>
+
+    <a href="index.html"> <h1>Go back to home page</h1></a>
+
+  <h2>Counter:</h2>
+  <p id="counterDisplay">0</p>
+
+  <button onclick="increaseCounter()">Increase</button>
+  <button onclick="decreaseCounter()">Decrease</button>
+
+  <script>
+    // Initial counter value
+    var counter = 0;
+
+    // Function to increase the counter
+    function increaseCounter() {
+      counter++;
+      updateCounterDisplay();
+    }
+
+    // Function to decrease the counter
+    function decreaseCounter() {
+      counter--;
+      updateCounterDisplay();
+    }
+
+    // Function to update the counter display
+    function updateCounterDisplay() {
+      document.getElementById('counterDisplay').innerText = counter;
+    }
+  </script>
+
+</body>
+</html>

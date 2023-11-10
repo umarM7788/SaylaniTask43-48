@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert on Link Click</title>
+</head>
+<body>
+    <h1>Task 01</h1>
+    <a href="index.html"> <h1>Go back to home page</h1></a>
+
+  <a href="#" id="myLink">Click me</a>
+
+  <script>
+    // Get the link element by its ID
+    var myLink = document.getElementById('myLink');
+
+    // Add a click event listener to the link
+    myLink.addEventListener('click', function(event) {
+      // Prevent the default link behavior (e.g., navigating to a new page)
+      event.preventDefault();
+
+      // Show an alert when the link is clicked
+      window.alert('Link clicked!');
+    });
+  </script>
+
+</body>
+</html>
